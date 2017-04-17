@@ -1,0 +1,29 @@
+#define TB_loadingScreen_imagePath "tb_loadingScreen.jpg"
+
+onLoadName="VIP - SavingDay";
+overviewPicture = "tb_loadingScreen.jpg";
+author="Gam3rz";
+onLoadMission="Tactical Battlefield: Retrieve the VIP";
+
+#include "tb_description.sqh"
+#include "tb_settings.hpp"
+#include "tb_objectReplacements.hpp"
+#include "tb_magazineLimitations.hpp"
+#include "tb_supply.hpp"
+#include "tb_vehicleMags.hpp"
+
+class CfgHints
+{
+    class test1
+    {
+        displayName = "VIP Objective";
+
+        class test2
+        {
+            arguments[] = {};
+            description = "Your helicopter as been hit by AA, you got crashed down but you Survived. You need to hide until US Rangers come to protect you.";
+            displayName = "VIP Objective";
+            tip = "You dont have any weapon, try to avoid fighting";
+        };
+    };
+};
